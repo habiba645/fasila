@@ -1,0 +1,105 @@
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  
+  --color-bg-hero: #F5F0E8;
+  --colorbg-light: #FFFFFF;
+  --color-dark: #333833;
+  --color-semi-white: #F5F0E8;
+  --color-green-dark: #3A4F38;
+  --color-green-medium: #5A7053;
+  --color-green-light: #8F9E8B;
+  --color-dark: #25211E;
+
+  --color-grey: #757575;
+  --color-bage: #E0D9CF; 
+}
+body{
+  background-color: var(--color-semi-white);
+}
+.navbar {
+    background-color: var(--color-semi-white);
+}
+ .nav-item a {
+    color: var(--color-dark);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover
+{
+  color : var(--color-green-medium)
+}
+.navbar-toggler [aria-expanded="true"]{
+  border-color: var(--color-green-light);
+}
+
+.landing {
+  background-color: var(--color-semi-white);
+  min-height: calc(100vh - 72px); /* 72 is the height of navigation bar */
+}
+.features{
+  background-color: var(--colorbg-light);
+  min-height: 90vh;
+}
+.feature-box {
+  height: max-content;
+  background-color: var(--color-green-light);
+  border-radius: 150% / 40%;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+  padding: 60px 30px 40px 30px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+   height: 400px;
+}
+
+
+.feature-box i {
+  /* margin-top: -40px; pull icon out of oval */
+  background: var(--colorbg-light);
+  border-radius: 50%;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  
+}
+  .card-img-top {
+            width: 100%; /* Ensure it fills card width */
+            height: 200px; /* Or adjust as needed */
+            object-fit: contain; /* Or 'cover'; 'contain' ensures whole image is visible */
+            margin-top: 1rem; /* Add some space above the image */
+        }
+        .card {
+            border: none; /* Remove default card border if desired */
+        }
+        .card-body {
+            padding-top: 0.5rem; /* Reduce space between image and title */
+        }
+        .btn-dark {
+             border-radius: 50px; /* Make button pill-shaped */
+             padding-left: 1.5rem;
+             padding-right: 1.5rem;
+        }
+.site-footer {
+  background-color: var(--color-dark);
+  height: 50vh;
+  color: var(--color-semi-white);
+  padding-top: 50px;
+}
+.card-img-top-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+        }
+        .card-img-top-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+    
